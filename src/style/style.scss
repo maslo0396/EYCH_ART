@@ -1,0 +1,109 @@
+.wrapper{
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+    align-items: stretch;
+	min-height: 100%;
+}
+
+[class*="__inner"]{
+    max-width:calc(var(--container-width) + var(--container-padding-x) * 2) ;
+	margin: 0 auto;
+}
+
+// HEADER===================================================================================================================
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-logo {
+    max-width: 168px;
+    width: 100%;
+    p{
+        font-size: 39px;
+        line-height: 62px;
+        font-weight: 700;
+    }
+    span{
+        font-size: 17px;
+        color: var(--color-beige);
+        letter-spacing: 7%;
+    }
+    &:hover, &:focus-visible{
+        text-decoration: none;
+    }
+
+}
+.header-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+}
+.header-menu__list {
+    display: flex;
+}
+.header-menu__list--left {
+    gap: 45px;
+}
+.header-menu__item {
+}
+.header-menu__link {
+    display: inline-flex;
+    align-items: center;
+    height: 50px;
+}
+.header-menu__list--right {
+    gap: 13px;
+}
+.header-menu__item--icon{
+
+}
+.link-tel{
+    margin-right: 8px;
+}
+#burger-toggle{
+    display: none;
+}
+
+.header-burger{
+    display: none;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border: var(--border) + var(--color-black);
+    border-radius: 50%;
+    background: transparent;
+    &::after{
+        position: absolute;
+        top: 48%;
+        left: 5px;
+        content: "";
+        border: 2px solid var(--color-black);
+        width: 48px;
+        transform: rotate(44.45deg);
+        transition-duration: var( --transition-duration);
+    }
+    &::before{
+        position: absolute;
+        top: 48%;
+        right: 5px;
+        content: "";
+        border: 2px solid var(--color-black);
+        width: 48px;
+        transform: rotate(-45.55deg);
+        transition-duration: var( --transition-duration);
+    }
+    &:hover, &:focus-visible{
+        border-color: var(--color-beige);
+        &::after, &::before{
+            border-color: var(--color-beige);
+        }
+    }
+    
+}

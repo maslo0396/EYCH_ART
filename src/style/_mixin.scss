@@ -1,0 +1,47 @@
+@use 'vareables' as v;
+
+// ОБРАЩАТЬСЯ К mixin через "@include()"
+// Медиазапросы ===================================
+@mixin desktop(){
+	@media(max-width: v.$breakpoint_xxl){
+		@content;
+	}
+}	
+@mixin laptop(){		
+	@media(max-width: v.$breakpoint_xl){
+		@content;
+	} 
+}		
+@mixin tablet(){
+	@media(max-width: v.$breakpoint_l){
+		@content;
+	}
+}	
+@mixin 	tablet_sm(){
+	@media(max-width: v.$breakpoint_md){
+		@content;
+	}
+}
+	
+@mixin mobile(){		
+	@media(max-width: v.$breakpoint_sm){
+		@content;
+	}
+}
+@mixin mobile_sm{
+	@media(max-width: v.$breakpoint_xsm){
+		@content;
+	}
+}
+
+//Адаптивный размер шрифта
+@mixin adaptiv-font($psSize, $mobSize){
+	$addSize: $psSize - $mobSize;
+	$addMobSize: $addSize + $addSize * 0.7;
+	@media(max-width: 767.98px){
+		font-size: calc(#{$mobSize + px} + #{$addMobSize} * ((100vw - 320px) / #{v.$maxWidth}));
+	}
+	@media(min-width: 767.98px){
+		font-size: calc(#{$mobSize + px} + #{$addSize} * (100vw / #{v.$maxWidth}));
+	}
+}

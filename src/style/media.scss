@@ -1,0 +1,66 @@
+@use 'mixin' as m;
+
+
+@include m.desktop{
+}
+
+@include m.laptop{
+   
+}
+
+@include m.tablet{
+    .header-menu__list{
+        position: fixed;
+        left: 0;
+        right: 0;
+        padding-top: 500px;
+        z-index: -1;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        top: -180vh;
+        bottom: 180vh;
+    }
+    .header-menu__list--right{
+        margin-top: 500px;
+    }
+    #burger-toggle:checked ~ .header-burger{
+        &::after{
+            transform: rotate(-0.55deg);
+        }
+        &::before{
+            transform: rotate(89.45deg);
+        }
+        border-color: var(--color-beige);
+        &::after, &::before{
+            border-color: var(--color-beige);
+        }
+    }
+    #burger-toggle:checked ~ .header-menu__list{
+        top: -100%;
+        bottom: 0;
+        transition: .5s;
+        cursor: pointer;
+        a{
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+    .header-menu__link{
+        cursor: pointer;
+    }
+    .header-burger{
+        display: inline-flex;
+    }
+}
+
+
+@include m.tablet_sm{
+}
+
+@include m.mobile{
+}
+
+@include m.mobile_sm{
+}
