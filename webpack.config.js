@@ -66,11 +66,9 @@ module.exports = {
             },
             {
                 test: /\.woff2?$/i,
-                type: 'asser/resource',
-                generator: {
-                    falename: 'fonts/[name].[ext]'
-                }
+                type: 'asset/resource'
             }
+            
         ]
     }
 

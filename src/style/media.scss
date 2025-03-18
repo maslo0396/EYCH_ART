@@ -24,6 +24,9 @@
     .header-menu__list--right{
         margin-top: 500px;
     }
+    .header-menu__list--left{
+         
+    }
     #burger-toggle:checked ~ .header-burger{
         &::after{
             transform: rotate(-0.55deg);
