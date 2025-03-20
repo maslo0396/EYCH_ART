@@ -5,57 +5,60 @@
 }
 
 @include m.laptop{
-   
+   .nav-menu{
+    gap: 15px;
+   }
 }
 
 @include m.tablet{
-    .header-menu__list{
+    .nav{
+        display: flex;
+    }
+   .burger-menu{
+        display: block;
+   }
+   .burger-menu.active .bar{
+        background: var(--color-beige);
+        transition-duration: var(--transition-duration);
+   }
+   .burger-menu.active .bar:nth-child(2){
+        opacity: 0;
+   }
+   .burger-menu.active .bar:nth-child(1){
+        transform: translateY(12px) rotate(45deg);
+    }
+    .burger-menu.active .bar:nth-child(3){
+        transform: translateY(-14px) rotate(-45deg);
+    }
+    .burger-menu.active{
+        border: 1px solid var(--color-beige);
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+    }
+   .navbar{
         position: fixed;
-        left: 0;
-        right: 0;
-        padding-top: 500px;
-        z-index: -1;
+        top: -100%;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 110%;
+        height: 100%;
+        background: var(--color-white);
+   }
+   .nav-menu{
+        margin: 20px 0;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
-        top: -180vh;
-        bottom: 180vh;
-    }
-    .header-menu__list--right{
-        margin-top: 500px;
-    }
-    .header-menu__list--left{
-         
-    }
-    #burger-toggle:checked ~ .header-burger{
-        &::after{
-            transform: rotate(-0.55deg);
-        }
-        &::before{
-            transform: rotate(89.45deg);
-        }
-        border-color: var(--color-beige);
-        &::after, &::before{
-            border-color: var(--color-beige);
-        }
-    }
-    #burger-toggle:checked ~ .header-menu__list{
-        top: -100%;
-        bottom: 0;
-        transition: .5s;
-        cursor: pointer;
-        a{
-            &:hover{
-                text-decoration: underline;
-            }
-        }
-    }
-    .header-menu__link{
-        cursor: pointer;
-    }
-    .header-burger{
-        display: inline-flex;
-    }
+        gap: 20px;
+        transition-duration: var(--transition-duration);
+   }
+   .navbar.active{
+        top: 16%;
+        left: 0%;
+        transition-duration: var(--transition-duration);
+   }
+
+
 }
 
 
