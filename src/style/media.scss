@@ -37,7 +37,7 @@
         height: 50px;
     }
    .navbar{
-        position: fixed;
+        position: absolute;  
         top: -100%;
         flex-direction: column;
         justify-content: flex-start;
@@ -53,7 +53,7 @@
         transition-duration: var(--transition-duration);
    }
    .navbar.active{
-        top: 16%;
+        top: 90px;
         left: 0%;
         transition-duration: var(--transition-duration);
    }
