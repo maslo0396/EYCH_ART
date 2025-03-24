@@ -49,15 +49,17 @@ a{
 a, button, input, textarea, svg, label *{
     transition-duration: var(--transition-duration);
 }
+
 svg *[fill] {fill: currentColor;}
 svg *[stroke] {stroke: currentColor;}
+
 button{
     white-space: nowrap;
     background: transparent;
+    width: 100%;
 }
 .button{
     max-width: 290px;
-    width: 100%;
     height: 60px;
     font-size: 1rem;
     white-space: nowrap;
@@ -84,11 +86,17 @@ button{
     border-radius: 50%;
     max-width: 90px;
     height: 90px;
-    width: 100%;
     &:hover{
         border-color: var(--color-beige);
         color: var(--color-beige);
     }
+}
+
+.scroll{
+    max-width: 65px;
+    height: 65px;
+    border: 2px solid rgb(48, 48, 48);
+    border-radius: 50%;
 }
 // h1, h2, h3, h4, h5, h6 {
 
