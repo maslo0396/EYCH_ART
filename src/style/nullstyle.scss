@@ -49,8 +49,11 @@ a{
 a, button, input, textarea, svg, label *{
     transition-duration: var(--transition-duration);
 }
+svg *[fill] {fill: currentColor;}
+svg *[stroke] {stroke: currentColor;}
 button{
     white-space: nowrap;
+    background: transparent;
 }
 .button{
     max-width: 290px;
@@ -76,7 +79,17 @@ button{
         box-shadow: 0px 10px 15px 2px rgba(0, 0, 0, 0.25);
     }
 }
-
+.arrow{
+    border: 2px solid rgb(48, 48, 48);
+    border-radius: 50%;
+    max-width: 90px;
+    height: 90px;
+    width: 100%;
+    &:hover{
+        border-color: var(--color-beige);
+        color: var(--color-beige);
+    }
+}
 // h1, h2, h3, h4, h5, h6 {
 
 // }
