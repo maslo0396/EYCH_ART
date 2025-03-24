@@ -4,6 +4,9 @@ body{
 }
 @font-face {
     font-family: Impact;
-    src: url(./fonts/Impact.woff2);
-
+    src: url(./fonts/Impact.woff2) format(woff2);
+}
+@font-face {
+    font-family: Arial;
+    src: url(./fonts/Arial.woff2) format(woff2);
 }
