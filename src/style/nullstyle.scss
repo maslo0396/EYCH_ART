@@ -98,6 +98,15 @@ button{
     border: 2px solid rgb(48, 48, 48);
     border-radius: 50%;
 }
-// h1, h2, h3, h4, h5, h6 {
-
-// }
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-family-base);
+    font-weight: 400;
+}
+h1{
+   font-size: 8rem;
+   
+}
+h2{
+    font-size: 5rem;
+    
+}
