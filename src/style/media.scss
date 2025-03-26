@@ -53,6 +53,16 @@
      h2{
           font-size: 2.5rem;
      }
+     h3{
+          font-size: 2.4rem;
+     }
+     h4{
+          font-size: 1.8rem;
+          line-height: 36px;
+     }
+     h5{
+          font-size: 1.5rem;
+     }
 // HEADER==================================================
 
     .nav{
@@ -136,6 +146,43 @@
           flex-direction: column;
           align-items: center;
      }
+// STAGES ===================================================  
+.stages__header{
+     justify-content: center;
+     h3{
+          text-align: center;
+     }
+}
+.stages__button{
+     display: none;
+}
+.stages__info{
+     display: grid;
+     grid-template-columns: none;  
+     gap: 50px; 
+}
+.stages__filter{
+     display: none;
+}
+.stages__column:nth-child(3){
+     order: 4;
+}
+.item-stage__pointer{
+     display: flex;
+     justify-content: center;
+     margin-top: 60px;
+}
+.stages__job{
+     display: none;
+}
+.job--small{
+     position: absolute;
+     right: 0;
+     display: flex;
+     width: 110px;
+     height: 110px;
+     font-size: 0.8rem;
+}
 
 // FOOTER ===================================================
      .footer-navbar{
@@ -158,6 +205,11 @@
 // MAIN ===================================================
 .main{
      background-position: center top 60%;
+}
+
+//STAGES=====================================================
+.item-stage__number{
+     font-size: 3REM;
 }
 
 // FOOTER ===================================================
