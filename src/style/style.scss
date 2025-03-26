@@ -107,8 +107,7 @@
     align-items: center;
     margin: 50px 0;
 }
-.main-content__left {
-}
+
 .main-info {
     max-width: 440px;
 }
@@ -125,8 +124,7 @@
     color: var(--color-beige);
     font-weight: 500;
 }
-.main-info__signature {
-}
+
 .main-content__right {
     font-family: var(--font-family-base);
     font-size: 30px;
@@ -139,6 +137,97 @@
     gap: 20px;
 }
 
+// STAGES===========================================
+
+.stages{
+    margin-top: 120px;
+}
+
+.stages__header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.stages__info {
+    margin-top: 130px;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: repeat(3, 1fr);
+}
+.stages__column {
+}
+
+.item-stage {
+}
+.item-stage__header {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.item-stage__number {
+    color: var(--color-beige);
+    font-size: 5rem;
+    font-weight: 400;
+    line-height: 58px;
+}
+.--text{
+    font-size: 1rem;
+    font-family: Roboto, sans-serif;
+}
+.item-stage__titile {
+}
+.item-stage__start-text {
+}
+.item-stage__sub-title {
+    margin:45px 0 30px;
+}
+.item-stage__finish-text {
+    margin-bottom: 30px;
+}
+.item-stage__link {
+    color: var(--color-beige);
+    &::after{
+        content: url(./img/Union.svg);
+        margin-left: .25rem;
+    }
+}
+.item-stage__pointer {
+}
+
+.job {
+    display: flex;
+    width: 160px;
+    height: 160px;
+    padding: 13px;
+    border: 2px solid var(--color-black);
+    border-radius: 50%;
+}
+.job__container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border-radius: 50%;
+    text-align: center;
+    background-color: var(--color-black);
+}
+.job__content {
+    text-align: center;
+    color: var(--color-beige);
+    line-height: 28px;
+    letter-spacing: 2px;
+}
+.stages__img{
+    transform: scale(1, 1) rotate(110deg);
+}
+.stages__filter {
+    max-width: 220px;
+    
+    img{
+        width: 100%;
+    }
+}
 
 
 // FOOTER ===================================================
@@ -151,26 +240,10 @@
     grid-template-columns: 1fr 1.2fr;
     margin: 70px 0 65px;
 }
-.nav__title {
-    
-}
-
-.footer-navbar {
-   
-}
-
-.footer-menu {
-}
-
-.footer__item {
-   
-}
 
 .footer__link {
     color: var(--color-white);
 }
-
-
 
 .footer-info {
     margin-bottom: 70px;
