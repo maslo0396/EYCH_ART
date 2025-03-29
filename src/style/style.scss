@@ -174,10 +174,7 @@
     font-weight: 400;
     line-height: 58px;
 }
-.--text{
-    font-size: 1rem;
-    font-family: Roboto, sans-serif;
-}
+
 .item-stage__titile {
 }
 .item-stage__start-text {
@@ -236,6 +233,60 @@
 }
 
 
+// METTING ==================================================
+.metting-content{
+    position: relative;
+}
+.baners {
+    position: relative;
+    padding-left: 50px;
+    padding-right: 10px;
+    max-width: 1470px;
+    height: 510px;
+    background:var(--color-beige);
+    border-radius: 0.4rem;
+    margin: 300px 0 50px;
+}
+.baner__content{
+    display: flex;
+}
+.baner__info {
+    margin-top: 65px;
+    display: flex;
+    flex-direction: column;
+    max-width: 620px;
+    h4{
+        margin: 70px 0 45px;
+    }
+}
+.baner__icon{
+    max-width: 80px;
+    width: 100%;
+}
+.baner__text{
+    font-size: 1.2rem;
+}
+.baner__img {
+    max-width: 700px;
+    position: relative;
+    top: -90px;
+    img{
+        width: 100%;
+    height: 100%;
+    object-fit: cover;
+    }
+}
+.baner-btn{
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+}
+.baner-btn--right{
+    right: -40px;
+}
+.baner-btn--left{
+    left: -40px;
+}
 // FOOTER ===================================================
 .footer {
     background: var(--color-gray);
