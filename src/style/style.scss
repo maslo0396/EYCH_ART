@@ -161,8 +161,6 @@
     position: relative;
 }
 
-.item-stage {
-}
 .item-stage__header {
     display: flex;
     align-items: center;
@@ -175,10 +173,6 @@
     line-height: 58px;
 }
 
-.item-stage__titile {
-}
-.item-stage__start-text {
-}
 .item-stage__sub-title {
     margin:45px 0 30px;
 }
@@ -249,12 +243,14 @@
 }
 .baner__content{
     display: flex;
+    justify-content: space-between;
 }
 .baner__info {
     margin-top: 65px;
     display: flex;
     flex-direction: column;
     max-width: 620px;
+    width: 50%;
     h4{
         margin: 70px 0 45px;
     }
@@ -268,12 +264,13 @@
 }
 .baner__img {
     max-width: 700px;
+    width: 50%;
     position: relative;
     top: -90px;
     img{
         width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
     }
 }
 .baner-btn{
