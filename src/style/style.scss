@@ -167,10 +167,7 @@
     gap: 30px;
 }
 .item-stage__number {
-    color: var(--color-beige);
     font-size: 5rem;
-    font-weight: 400;
-    line-height: 58px;
 }
 
 .item-stage__sub-title {
@@ -283,6 +280,46 @@
 }
 .baner-btn--left{
     left: -40px;
+}
+
+// GETTING===================================================
+.getting{
+
+}
+.getting__header, .getting__main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header--transparent {
+}
+
+.getting__main {
+    align-items: flex-start;
+}
+.getting___text {
+    margin-top: 100px;
+    font-family: Roboto;
+    font-size: 1.8rem;
+    line-height: 90px;
+    max-width: 1000px;
+    width: 50%;
+}
+.getting___text--number {
+    font-size: 3rem;
+}
+.getting__img {
+    max-width: 530px;
+    width: 50%;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+}
+
+.getting-btn{
+    display: none;
 }
 // FOOTER ===================================================
 .footer {
