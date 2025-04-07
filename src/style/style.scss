@@ -225,6 +225,9 @@
 
 
 // METTING ==================================================
+.metting{
+    margin-bottom: 150px;
+}
 .metting-content{
     position: relative;
 }
@@ -284,14 +287,12 @@
 
 // GETTING===================================================
 .getting{
-
+   
 }
 .getting__header, .getting__main {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-.header--transparent {
 }
 
 .getting__main {
@@ -321,6 +322,21 @@
 .getting-btn{
     display: none;
 }
+
+// ADVANTAGES ===============================================
+.advantages {
+    position: relative;
+}
+
+.advantages__job {
+    position: absolute;
+    right: 9rem;
+    top: -5rem;
+}
+
+.advantages-top {
+}
+
 // FOOTER ===================================================
 .footer {
     background: var(--color-gray);
