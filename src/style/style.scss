@@ -201,6 +201,7 @@
 .job__container {
     display: flex;
     align-items: center;
+    justify-content: center;
     width: 100%;
     border-radius: 50%;
     text-align: center;
@@ -324,7 +325,7 @@
 // ADVANTAGES ===============================================
 .advantages {
     position: relative;
-    margin-bottom: 180px;
+    margin-bottom: 100px;
 }
 
 .advantages__job {
@@ -430,6 +431,69 @@
     font-size: 1rem;
     text-align: center;
 }
+
+// UNIQUE ===================================================
+.unique__header{
+    span{
+        color: var(--color-black);
+    }
+}
+
+.unique {
+    margin-bottom: 250px;
+}
+
+.unique__content {
+    display:flex;
+    gap: 100px;
+    align-items: stretch;
+    justify-content: space-between;
+}
+.unique__picture {
+    max-width: 720px;
+    max-height: 380px;
+    width: 50%;
+    background: rgba(48, 48, 48, 0.5);
+    border-radius: 7px;
+    img{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        opacity: 0.8;
+        z-index: -1;
+    }
+}
+.play{
+    position: relative;
+    top: -50%;
+    left: 43%;
+    border: 2px solid rgb(48, 48, 48);
+    padding: 5px;
+    width: 90px;
+    height: 90px;
+
+}
+.play__container{
+    background:var(--color-gray) ;
+}
+
+.unique__blog {
+    max-width: 620px;
+    width: 50%;
+    display: flex;
+    
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: "Roboto", sans-serif;
+}
+.unique__text {
+}
+.uniqui__quote {
+    font-style: italic;
+    color: var(--color-beige);
+}
+
 // FOOTER ===================================================
 .footer {
     background: var(--color-gray);
@@ -452,7 +516,4 @@
     display: flex;
     justify-content: space-between;
     gap: 15px;
-}
-.footer-info__item {
-    
 }
