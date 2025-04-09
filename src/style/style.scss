@@ -286,9 +286,7 @@
 }
 
 // GETTING===================================================
-.getting{
-   
-}
+
 .getting__header, .getting__main {
     display: flex;
     justify-content: space-between;
@@ -326,6 +324,7 @@
 // ADVANTAGES ===============================================
 .advantages {
     position: relative;
+    margin-bottom: 180px;
 }
 
 .advantages__job {
@@ -335,8 +334,102 @@
 }
 
 .advantages-top {
+   margin-bottom: 100px;
 }
-
+.advantages-top__subtitle{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    color: var(--color-beige);
+    font-style: italic;
+    margin-bottom: 18px;
+}
+.advantages__columns{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    margin: 0 -3.75rem 3rem;
+}
+.advantages__column{
+    display: flex;
+    height: 180px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    padding: 0 3.75rem;
+    &:nth-child(1), &:nth-child(3){
+        border-right:1px solid var(--color-black);
+    }
+}
+.advantages-item__text{
+    font-family: "Roboto", sans-serif;
+}
+.advantages-item__link{
+    color: var(--color-beige);
+    svg{
+        margin-left: 5px;
+    }
+}
+.module{
+    position: fixed;
+    top: 50%;
+    left: 25%;
+    right: 10px;
+    max-width: 520px;
+    height: 290px;
+    padding: 70px;
+    border: 1px solid var(--color-black);
+    border-radius: 10px;
+    box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.2);
+}
+#overlayMenu2{
+    left: 40%;
+}
+#overlayMenu3{
+    left: 30%;
+}
+.module__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+.module__close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border:1px solid var(--color-black);
+    &::after, &::before{
+        position: absolute;
+        content: "";
+        border: 2px solid var(--color-black);
+        height: 90%;
+        top: 3px;
+        left: 23px;
+    }
+    &::after{
+        transform: rotate(44.45deg);
+    }
+    &::before{
+        transform: rotate(-45.55deg);
+    }
+    &:hover{
+        border-color:var(--color-beige) ;
+        &::after, &::before{
+            border-color:var(--color-beige) ;
+        }
+    }
+}
+.module__text{
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    text-align: center;
+}
 // FOOTER ===================================================
 .footer {
     background: var(--color-gray);
@@ -361,5 +454,5 @@
     gap: 15px;
 }
 .footer-info__item {
-    font-family: "Roboto", sans-serif;
+    
 }

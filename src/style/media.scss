@@ -79,6 +79,7 @@
      display: none;
 }
 
+
 // FOOTER ===================================================
 .footer-nav{
      display: flex;
@@ -281,6 +282,19 @@
 }
 
 // ADVANTAGES ===============================================
+.advantages__columns{
+     gap: 50px;
+}
+.advantages__column{
+     height: 160px;
+}
+.advantages-item__link{
+     display: flex;
+}
+.module{
+     padding:70px 30px;
+     text-align: center;
+}
 
 // FOOTER ===================================================
      .footer-navbar{
