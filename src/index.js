@@ -1,5 +1,6 @@
 import './index.html';
 import './index.scss';
+import './swiper-bundle';
 
 const burger = document.querySelector('.burger-menu')
 const navMenu = document.querySelector('.navbar')
