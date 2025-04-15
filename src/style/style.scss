@@ -513,7 +513,7 @@
 
 .reviews__wrapper{
     margin: 0 auto;
-    gap: 10px;
+    gap: 30px;
 }
 
 .reviews__slider{
@@ -527,11 +527,6 @@
     gap: 30px;
 }
 
-
-.reviews__slider-name{
-
-}
-
 .reviews__slider-title{
     font-family: "Roboto", sans-serif;
     font-size: 1.2rem;
@@ -542,9 +537,6 @@
     font-size: 1rem;
 }
 
-.reviews__pagination{
-
-}
 .swiper-button{
     display: flex;
     justify-content: space-between;
@@ -563,6 +555,81 @@
 
 .reviews__button--next{
     transform: rotate(180deg);
+}
+
+// QUESTIONS ================================================
+.questions {
+    margin-top: 200PX;
+}
+
+.questions__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.accordion {
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+    max-width: 830px;
+    width: 100%;
+}
+
+.accordion__item{
+    border-bottom: 2px solid var(--color-black);
+}
+
+details[open]
+summary::after{
+ transform: rotate(90deg);
+}
+.accordion__question {
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    color: var(--color-gray);
+    
+    &::marker{
+        content: none;
+    }
+    &::after{
+        content: url(./img/arrow.svg);
+        transition: .5s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid rgb(48, 48, 48);
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+    }
+}
+
+.accordion__answer {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+}
+.questions__form {
+}
+.form {
+}
+.form__header {
+}
+.form__main {
+}
+.form__item {
+}
+.form__label {
+}
+.form__input {
+}
+.form__button {
+}
+.form__bottom-text {
 }
 // FOOTER ===================================================
 .footer {
