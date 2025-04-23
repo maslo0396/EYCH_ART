@@ -231,6 +231,8 @@
 }
 .metting-content{
     position: relative;
+    max-width: 1300px;
+    margin: 0 auto;
 }
 .baners {
     position: relative;
@@ -242,9 +244,15 @@
     border-radius: 0.4rem;
     margin: 300px 0 50px;
 }
+.baners__list{
+    display: flex;
+    gap: 30px;
+}
 .baner__content{
     display: flex;
     justify-content: space-between;
+    padding-left: 20px;
+    margin-right: 20px;
 }
 .baner__info {
     margin-top: 65px;
@@ -264,6 +272,7 @@
     font-size: 1.2rem;
 }
 .baner__img {
+    z-index: -1;
     max-width: 700px;
     width: 50%;
     position: relative;
@@ -280,10 +289,13 @@
     top: 50%;
 }
 .baner-btn--right{
-    right: -40px;
+    
 }
 .baner-btn--left{
     left: -40px;
+}
+.swiper-button-prev, .swiper-button-next{
+    top: 80%;
 }
 
 // GETTING===================================================
