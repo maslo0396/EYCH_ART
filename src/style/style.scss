@@ -487,8 +487,7 @@
     justify-content: space-between;
     font-family: "Roboto", sans-serif;
 }
-.unique__text {
-}
+
 .uniqui__quote {
     font-style: italic;
     color: var(--color-beige);
@@ -559,14 +558,18 @@
 
 // QUESTIONS ================================================
 .questions {
-    margin-top: 200PX;
+    margin-top: 12.5rem;
+    margin-bottom: 2.5rem;
 }
-
+.questions__header{
+    margin-bottom: 8.75rem;
+}
 .questions__content {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 60px;
+    margin-bottom: 1.5rem;
 }
 
 .accordion {
@@ -613,23 +616,51 @@ summary::after{
     font-family: 'Roboto', sans-serif;
     font-size: 1rem;
 }
-.questions__form {
-}
+
 .form {
+    font-family: "Roboto", sans-serif;
+    color: var(--color-gray);
+    max-width: 470px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--color-black);
+    border-radius: 7px;
+    padding: 2.5rem 3.75rem;
+    gap: 1.8rem;
 }
 .form__header {
+    font-size: 1.25rem;
 }
-.form__main {
+.form__main, .form__item  {
+    display: flex;
+    flex-direction: column;
 }
-.form__item {
+.form__main{
+    gap: 1.5rem;
 }
+
 .form__label {
+    font-size: 0.8rem;
 }
 .form__input {
+    border: 1px solid var(--color-gray);
+    border-radius: 3px;
+    height: 2.8rem;
+    line-height: 150%;
+    padding-left: 1rem;
 }
 .form__button {
+    height: 45px !important;
+    max-width: 100% !important;
 }
 .form__bottom-text {
+    text-align: center;
+}
+.scroll__top{
+    svg{
+        transform: rotate(180deg);
+    }
 }
 // FOOTER ===================================================
 .footer {
