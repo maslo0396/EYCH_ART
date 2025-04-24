@@ -171,7 +171,7 @@
             <h3>Технология подбора сотрудников дает стабильный <span class="header--transparent">результат</span></h3>
             <div class="metting-content">
                 
-                <div class="swiper baners">
+                <div class="swiper swiper-2 baners">
                     <ul class="baners__list swiper-wrapper" id="banerList">
                         <li class="baner__content swiper-slide">
                             <div class="baner__info">
@@ -254,15 +254,15 @@
                             </div>
                         </li>
                     </ul>
-                    <div class="swiper-pagination"></div>
+                    <div class="swiper-pagination-2"></div>
                 </div>
-                <button class="arrow baner-btn baner-btn--left swiper-button-prev" id="arrowLeft">
+                <button class="arrow baner-btn baner-btn--left swiper-button-prev-2" id="arrowLeft">
                     <svg width="42.691406" height="11.879456" viewBox="0 0 42.6914 11.8795" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <line id="Line 3" x1="42.691406" y1="5.879456" x2="5.691406" y2="5.879456" stroke="#D9BC56" stroke-opacity="1.000000" stroke-width="2.000000"/>
                     <path id="Union" d="M4.07178 11.8794L0 5.9397L4.07178 0L4.07178 5.27942L7.69092 6.10352e-05L7.69092 11.8795L4.07178 6.6001L4.07178 11.8794Z" clip-rule="evenodd" fill="#D9BC56" fill-opacity="1.000000" fill-rule="evenodd"/>
                     </svg>
                 </button> 
-                <button class="arrow baner-btn baner-btn--right swiper-button-next" id="arrowRight">
+                <button class="arrow baner-btn baner-btn--right swiper-button-next-2" id="arrowRight">
                     <svg width="42.691406" height="11.879456" viewBox="0 0 42.6914 11.8795" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                         <line id="Line 3" x1="0.000000" y1="6.000000" x2="37.000000" y2="6.000000" stroke="#303030" stroke-opacity="1.000000" stroke-width="2.000000"/>
                         <path id="Union" d="M38.6196 6.10352e-05L42.6914 5.93976L38.6196 11.8795L38.6196 6.60004L35.0005 11.8794L35.0005 0L38.6196 5.27936L38.6196 6.10352e-05Z" clip-rule="evenodd" fill="#303030" fill-opacity="1.000000" fill-rule="evenodd"/>
@@ -401,7 +401,7 @@
                 <h3>Отзывы <span class="header--transparent">о нас</span></h3>
                 <button class="button button--beige">Читать все отзывы</button>
             </header>
-            <div class="swiper reviews-swiper">
+            <div class="swiper swiper-1 reviews-swiper">
                 <!-- Additional required wrapper -->
                 <div class="swiper-wrapper reviews__wrapper">
                   <!-- Slides -->
@@ -470,15 +470,15 @@
                 <!-- If we need navigation buttons -->
               </div>
               <!-- If we need pagination -->
-            <div class="swiper-pagination  reviews__pagination"></div>
+            <div class="swiper-pagination-1  reviews__pagination"></div>
             <div class="swiper-button">
-                <div class="swiper-button-prev arrow reviews__button">
+                <div class="swiper-button-prev-1 arrow reviews__button">
                     <svg width="42.691406" height="11.879456" viewBox="0 0 42.6914 11.8795" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                         <line id="Line 3" x1="42.691406" y1="5.879456" x2="5.691406" y2="5.879456" stroke="#D9BC56" stroke-opacity="1.000000" stroke-width="2.000000"/>
                         <path id="Union" d="M4.07184 11.8794L0 5.9397L4.07184 0L4.07184 5.27945L7.69098 9.15527e-05L7.69098 11.8795L4.07184 6.6001L4.07184 11.8794Z" clip-rule="evenodd" fill="#D9BC56" fill-opacity="1.000000" fill-rule="evenodd"/>
                     </svg>
                 </div>
-                <div class="swiper-button-next arrow reviews__button reviews__button--next">
+                <div class="swiper-button-next-1 arrow reviews__button reviews__button--next">
                     <svg width="42.691406" height="11.879456" viewBox="0 0 42.6914 11.8795" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                         <line id="Line 3" x1="42.691406" y1="5.879456" x2="5.691406" y2="5.879456" stroke="#D9BC56" stroke-opacity="1.000000" stroke-width="2.000000"/>
                         <path id="Union" d="M4.07184 11.8794L0 5.9397L4.07184 0L4.07184 5.27945L7.69098 9.15527e-05L7.69098 11.8795L4.07184 6.6001L4.07184 11.8794Z" clip-rule="evenodd" fill="#D9BC56" fill-opacity="1.000000" fill-rule="evenodd"/>
@@ -488,19 +488,36 @@
         </div>
         <script src="./swiper-bundle.js"></script>
         <script>
-            const swiper = new Swiper('.swiper', {
+            const swiper1 = new Swiper('.swiper-1', {
                 // Optional parameters
                 loop: true,
+                slidesPerView: 4,
 
                 // If we need pagination
                 pagination: {
-                  el: '.swiper-pagination',
+                  el: '.swiper-pagination-1',
                 },
             
                 // Navigation arrows
                 navigation: {
-                  nextEl: '.swiper-button-next',
-                  prevEl: '.swiper-button-prev',
+                  nextEl: '.swiper-button-next-1',
+                  prevEl: '.swiper-button-prev-1',
+                },
+            }); 
+            const swiper2 = new Swiper('.swiper-2', {
+                // Optional parameters
+                loop: true,
+                slidesPerView: 4,
+
+                // If we need pagination
+                pagination: {
+                  el: '.swiper-pagination-2',
+                },
+            
+                // Navigation arrows
+                navigation: {
+                  nextEl: '.swiper-button-next-2',
+                  prevEl: '.swiper-button-prev-2',
                 },
             }); 
         </script>
