@@ -70,10 +70,7 @@
 // STAGES===================================================
 
 // METTING===================================================
-.baners{
-     // height: 520px;
-     // padding: 0 !important;
-}
+
 
 // GETTING===================================================
 .getting__main{
@@ -353,12 +350,13 @@
 }
 
 // REVIEWS ==================================================
+.reviews-content{
+     padding: 0;
+}
 .reviews__slider{
-     max-width: 350px;
+     min-height: 350px;
 }
-.swiper-button{
-     display: none;
-}
+
 
 // QUESTIONS ================================================
 .questions{
@@ -418,12 +416,6 @@ button{
 }
 .reviews__header{
      flex-direction: column;
-}
-.reviews__slider{
-     gap: 15px;
-}
-.reviews__slider{
-     max-width: 290px;
 }
 
 .reviews__slider-text{

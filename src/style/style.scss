@@ -509,21 +509,23 @@
         color: var(--color-black);
     }
 }
-
+.reviews-content{
+    padding: 0 5.3rem;
+}
 .reviews-swiper{
    margin-top: 120px;
-//    max-width: 1200px;
 }
 
 .reviews__wrapper{
     margin: 0 auto;
-    gap: 30px;
+    
 }
-
+.reviews__pagination{
+    text-align: center;
+}
 .reviews__slider{
     padding: 20px 30px 0;
-    // max-width: 440px;
-    height: 500px;
+    min-height: 500px;
     border: 1px solid var(--color-beige);
     border-radius: 7px;
     display: flex;
@@ -541,26 +543,9 @@
     font-size: 1rem;
 }
 
-.swiper-button{
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-    top: -300px;
-    z-index: 999;;
-}
-.reviews__button{
-    top: 0px;
-    color: var(--color-black);
-    max-width: 90px;
-    width: 100%;
-    max-height: 90px;
-    height: 100%;
 
-}
 
-.reviews__button--next{
-    transform: rotate(180deg);
-}
+
 
 // QUESTIONS ================================================
 .questions {
