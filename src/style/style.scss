@@ -231,28 +231,22 @@
 }
 .metting-content{
     position: relative;
-    max-width: 1300px;
+    padding: 0 4rem;
     margin: 0 auto;
 }
 .baners {
-    position: relative;
-    padding-left: 50px;
-    padding-right: 10px;
-    max-width: 1470px;
-    height: 510px;
-    background:var(--color-beige);
-    border-radius: 0.4rem;
+    height: 730px;
+    padding-top: 200px !important;
     margin: 300px 0 50px;
 }
-.baners__list{
-    display: flex;
-    gap: 30px;
-}
+
 .baner__content{
     display: flex;
+    background:var(--color-beige);
     justify-content: space-between;
+    border-radius: 0.4rem;
     padding-left: 20px;
-    margin-right: 20px;
+    padding-right: 1rem;
 }
 .baner__info {
     margin-top: 65px;
@@ -283,19 +277,18 @@
     object-fit: contain;
     }
 }
-.baner-btn{
-    position: absolute;
+.swiper-pagination-1{
+    position: relative;
+    text-align: center;
+    top: -6rem !important;
     z-index: 1;
-    top: 50%;
 }
-.baner-btn--right{
-    
-}
-.baner-btn--left{
-    left: -40px;
-}
-.swiper-button-prev, .swiper-button-next{
-    top: 80%;
+.swiper-btn{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    top: -23rem;
+    z-index: 1;
 }
 
 // GETTING===================================================

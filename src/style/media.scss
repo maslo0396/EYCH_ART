@@ -70,8 +70,9 @@
 // STAGES===================================================
 
 // METTING===================================================
-.baner-btn{
-     top: 80%;
+.baners{
+     // height: 520px;
+     // padding: 0 !important;
 }
 
 // GETTING===================================================
@@ -272,6 +273,9 @@
 }
 
 // METTING===================================================
+     .metting-content{
+          padding: 0;
+     }
      .baners{
           padding: 0;
           margin: 200px 0 50px;
@@ -301,7 +305,7 @@
           left: 0;
           right: 0;
      }
-     .baner-btn{
+     .swiper-btn{
           display: none;
      }
 
